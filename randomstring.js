@@ -25,6 +25,13 @@ function randomstring(options) {
     for (var i = 0; i < options.numbersCount; i++) {
         uuid += numbers.charAt(Math.floor(Math.random() * numbers.length));
     }
+    
+    if (!options.canSpecialRepeat) {
+        if (options.specialsCount > options.specials.length) {
+            options.specialsCount = options.specials.length;
+        }
+    }
+
     for (var i = 0; i < options.specialsCount; i++) {
         let spIndex = Math.floor(Math.random() * options.specials.length);
         let specialChar = options.specials.charAt(spIndex);
