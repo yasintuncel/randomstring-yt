@@ -1,6 +1,11 @@
 # Simple Random String
  Simple, random string generator
 
+## Installation
+```bash
+$npm i randomstring-yt
+```
+
 ## Features
 
   * Lower characters
@@ -12,7 +17,7 @@
 ## default.js
 
 ```js
-const randomstring = require("../randomstring");
+const randomstring = require("randomstring-yt");
 
 const rs = randomstring();
 
@@ -25,7 +30,7 @@ console.log(rs);
 ## optional.js
 
 ```js
-const randomstring = require("../randomstring");
+const randomstring = require("randomstring-yt");
 
 const rs = randomstring({
     lowersCount: 4,
@@ -42,7 +47,7 @@ console.log(rs);
 ## specialnotrepeat.js
 
 ```js
-const randomstring = require("../randomstring");
+const randomstring = require("randomstring-yt");
 
 const rs = randomstring({
     specialsCount: 4,
@@ -53,3 +58,7 @@ const rs = randomstring({
 console.log(rs);
 // output: 4-d13.M_gDz!Z
 ```
+
+## License
+
+  [MIT](LICENSE)
