@@ -15,13 +15,25 @@ $npm i randomstring-yt
   * Repeatable or not, special characters
 
 ## default.js
-
+### default options
+```js
+const defaults = {
+    lowersCount: 3,
+    uppersCount: 3,
+    numbersCount: 3,
+    specialsCount: 1,
+    specials: '_',
+    canSpecialRepeat: true
+};
+```
+### usage
 ```js
 const randomstring = require("randomstring-yt");
 
 const rs = randomstring();
 
 console.log(rs);
+// 10 characters
 // output: x4I_Op03sI
 ```
 
@@ -58,6 +70,9 @@ const rs = randomstring({
 console.log(rs);
 // output: 4-d13.M_gDz!Z
 ```
+---
+***|`NOTE`|***
+if all options are set to 0 then the output will be 'yoo'
 
 ## License
 

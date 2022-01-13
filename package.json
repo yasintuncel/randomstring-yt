@@ -1,7 +1,7 @@
 {
   "name": "randomstring-yt",
   "description": "Simple, random string generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "yasintuncel <https://github.com/yasintuncel>",
   "license": "MIT",
   "repository": "https://github.com/yasintuncel/randomstring-yt",
